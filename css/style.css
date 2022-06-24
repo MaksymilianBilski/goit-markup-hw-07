@@ -471,6 +471,19 @@ figure {
 
 /* INDEX-LOREM*/
 
+.index-main-lorem{
+    padding: 94px 0 94px 0;
+}
+
+.index-main-lorem__container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.index-main-lorem__list{
+    display: flex;
+}
+
 .index-lorem-icon {
     width: 270px;
     height: 120px;
