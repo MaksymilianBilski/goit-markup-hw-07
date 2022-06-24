@@ -83,11 +83,6 @@ figure {
     margin: 0px;
 }
 
-
-.list {
-    list-style: none;
-}
-
 .section {
     padding: 94px 0 94px 0;
 }
@@ -97,15 +92,19 @@ figure {
     margin: 0 auto;
 }
 
+.index-nav-list--none {
+    list-style: none;
+}
+
 /* --- I-N-D-E-X- -H-E-A-D-E-R --- */
 .index-header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.index-header .container {
+.index-header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 24px 0 25px 0;
 }
 
@@ -125,18 +124,17 @@ figure {
     margin-right: 300px;
 }
 
-.index-nav {
+.index-nav-list {
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
-.index-nav li:not(:last-child) {
+.index-nav-list__item:not(:last-child) {
     padding-right: 35.5px;
 }
 
-.index-upper-link {
-    font-size: 14px;
+.index-nav-list__link {
+   font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.142em;
@@ -144,20 +142,26 @@ figure {
     color: inherit;
 }
 
-.index-active::after {
-    position: absolute;
+.index-nav-list__item__active{
+    max-height: 0px;
+}
+
+.index-nav-list__item__active::after {
     content: "";
     display: block;
     width: 53px;
+    margin-top: 28px;
     border-top: 4px solid var(--portfolio-link-color);
-    z-index: 1000;
-    top: 46.5px;
 }
 
-.index-upper-link:hover,
-.index-upper-link:focus {
+.index-nav-list__link:hover,
+.index-nav-list__link:focus {
     color: var(--index-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+}
+
+.index-header-contacts--none{
+    list-style: none;
 }
 
 .index-header-contacts {
@@ -165,7 +169,7 @@ figure {
     align-items: center;
 }
 
-.index-header-contacts a {
+.index-header-contacts__link {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14em;
@@ -174,22 +178,22 @@ figure {
     text-decoration: none;
 }
 
-.index-header-li svg {
+.index-header-contacts__svg {
     margin-right: 10px;
 }
 
-.index-header-contacts li:first-child {
+.index-header-contacts__item:first-child {
     margin-right: 30px;
 }
 
-.index-header-li:hover {
+.index-header-contacts__link:hover {
     color: var(--index-link-color);
     fill: var(--index-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
     cursor: pointer;
 }
 
-.index-header-li:focus {
+.index-header-contacts__item:focus {
     color: var(--index-link-color);
     fill: var(--index-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
@@ -214,7 +218,7 @@ figure {
     background-position: center;
 }
 
-.index-main-header .container {
+.index-main-header__container {
     fill: cover;
     display: flex;
     align-items: center;
@@ -223,7 +227,7 @@ figure {
     padding: 196.78px 250px 196.78px 250px;
 }
 
-.index-h1 {
+.index-main-header__h1 {
     font-family: Roboto;
     font-weight: 900;
     font-size: 44px;
@@ -232,7 +236,7 @@ figure {
     color: var(--index-third-font-color);
 }
 
-.index-button {
+.index-main-header__button {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
@@ -242,7 +246,6 @@ figure {
     background-color: var(--index-link-color);
     border: none;
     margin: 30px 500px 0 500px;
-    position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
