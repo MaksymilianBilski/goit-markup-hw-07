@@ -134,7 +134,7 @@ figure {
 }
 
 .index-nav-list__link {
-   font-size: 14px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.142em;
@@ -142,7 +142,7 @@ figure {
     color: inherit;
 }
 
-.index-nav-list__item__active{
+.index-nav-list__item__active {
     max-height: 0px;
 }
 
@@ -160,7 +160,7 @@ figure {
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.index-header-contacts--none{
+.index-header-contacts--none {
     list-style: none;
 }
 
@@ -247,7 +247,7 @@ figure {
     border: none;
     margin: 30px 500px 0 500px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
+    border-radius: 4px;
 }
 
 .index-modal-form {
@@ -471,48 +471,52 @@ figure {
 
 /* INDEX-LOREM*/
 
-.index-main-lorem{
+.index-main-lorem {
     padding: 94px 0 94px 0;
 }
 
-.index-main-lorem__container{
+.index-main-lorem__container {
     width: 1200px;
     margin: 0 auto;
 }
 
-.index-main-lorem__list{
-    display: flex;
-}
-
-.index-lorem-icon {
-    width: 270px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--index-bg);
-    margin-bottom: 30px;
-}
-
-.index-lorem-icon svg {
-    margin: 0 auto;
-}
-
-.index-loremipsum {
+.index-main-lorem__list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-.index-loremipsum h3 {
+.index-main-lorem__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.index-main-lorem__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--index-bg);
+    margin-bottom: 30px;
+}
+
+.index-main-lorem__svg {
+    margin: 0 auto;
+}
+
+.index-main-lorem__h3 {
     font-size: 14px;
     line-height: 1.142em;
     letter-spacing: 0.03em;
     padding-bottom: 10px;
 }
 
-.index-loremipsum p {
+.index-main-lorem__p {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -529,11 +533,11 @@ figure {
 
 /* INDEX ABOUT LIST */
 
-.index-about {
+.index-main-about {
     margin: 0 auto;
 }
 
-.index-about .container {
+.index-main-about__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,14 +545,7 @@ figure {
     padding-bottom: 94px;
 }
 
-.index-about-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.index-about .container>h2 {
+.index-main-about__h2 {
     font-size: 36px;
     line-height: 1.166em;
     font-weight: 700;
@@ -556,41 +553,56 @@ figure {
     padding-bottom: 50px;
 }
 
-.index-about-list li:not(:last-child) {
+.index-main-about__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.index-main-about__item {
     padding-right: 30px;
 }
 
-.index-about-list .about-sign {
-    position: relative;
+.index-main-about__item--not {
+    padding-right: 0px;
 }
 
-.index-about-list .about-sign div {
-    position: absolute;
-    bottom: 0;
+/* .index-main-about__sign {
     background-color: var(--index-first-bg);
     opacity: 0.8;
     width: 100%;
     height: 70px;
+} */
+
+.background-image {
+    height: 294px;
+    width: 370px;
+    background-image: url("../images/img2.jpg");
+    fill: cover;
+    background-repeat: no-repeat;
 }
 
-.index-about-list .about-sign p {
-    position: absolute;
-    bottom: 0px;
-    z-index: 1000;
+.background-image::after {
+    content: "Aplikacje Mobilne";
+    background-color: var(--index-first-bg);
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 206px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.03em;
-    width: 100%;
-    height: 70px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     font-family: 'Roboto';
     color: var(--index-third-font-color);
 }
+
 
 /* INDEX ABOUT LIST */
 
