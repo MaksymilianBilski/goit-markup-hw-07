@@ -1,24 +1,23 @@
 {
-    "workbench.colorTheme": "Default Dark+",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "editor.fontSize": 22,
-    "liveSassCompile.settings.autoprefix": [
-        
-
-    
-    ],
-    "liveSassCompile.settings.formats":[
-        // This is Default.
+    "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": null
+            "savePath": null,
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
         },
-        // You can add more 
         {
             "format": "compressed",
             "extensionName": ".min.css",
-            "savePath": "~/../css/"
-        },  
-    ]
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 1235,
+    "liveSassCompile.settings.autoprefix": null
 }

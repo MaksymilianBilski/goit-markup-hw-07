@@ -1399,17 +1399,18 @@ font-family: 'Roboto';
 .portfolio-footer__container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    max-height: 252px;
-    margin: 0 auto;
-    width: 1200px;
+        justify-content: flex-start;
+        align-items: center;
+        max-height: 252px;
+        margin: 0 auto;
+        width: 1200px;
 }
 
-.portfolio-footer__section {
+.portfolio-footer__sectiondata {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .portfolio-footer__logo {
@@ -1439,10 +1440,11 @@ font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     list-style: none;
+    margin: 0;
 }
 
-.portfolio-footer-contacts__item:hover,
-.portofolio-footer-contacts__item:focus {
+.portfolio-footer-contacts__link:hover,
+.portfolio-footer-contacts__link:focus {
     color: var(--portfolio-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
@@ -1455,6 +1457,7 @@ font-family: 'Roboto';
     font-family: Roboto;
     color: var(--portfolio-second-font-color);
     text-decoration: none;
+    margin-left: -40px;
 }
 
 .portfolio-footer-contacts__item:first-child {
