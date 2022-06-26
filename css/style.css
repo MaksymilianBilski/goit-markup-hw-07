@@ -657,6 +657,8 @@ figure {
     justify-content: center;
     flex-direction: column;
     padding-bottom: 94px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .index-main-about__h2 {
@@ -667,7 +669,7 @@ figure {
     padding-bottom: 50px;
 }
 
-.index-main-about__list {
+.index-about-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -675,16 +677,16 @@ figure {
     list-style: none;
 }
 
-.index-main-about__item {
+.index-about-list__item {
     padding-right: 30px;
 }
 
-.index-main-about__item--not {
+.index-about-list__item--not {
     padding-right: 0px;
 }
 
 
-.index-main-about__img__1 {
+.index-about-list__img__1 {
     height: 294px;
     width: 370px;
     background-image: url("../images/img1.jpg");
@@ -692,7 +694,7 @@ figure {
     background-repeat: no-repeat;
 }
 
-.index-main-about__img__2 {
+.index-about-list__img__2 {
     height: 294px;
     width: 370px;
     background-image: url("../images/img2.jpg");
@@ -700,7 +702,7 @@ figure {
     background-repeat: no-repeat;
 }
 
-.index-main-about__img__3 {
+.index-about-list__img__3 {
     height: 294px;
     width: 370px;
     background-image: url("../images/img3.jpg");
@@ -708,7 +710,7 @@ figure {
     background-repeat: no-repeat;
 }
 
-.index-main-about__img__1::after{
+.index-about-list__img__1::after{
         content: "Aplikacje Mobilne";
         background-color: var(--index-first-bg-opacity);
         width: 100%;
@@ -726,7 +728,7 @@ figure {
         color: var(--index-third-font-color);
     }
 
-.index-main-about__img__2::after {
+.index-about-list__img__2::after {
     content: "Aplikacje Mobilne";
     background-color: var(--index-first-bg-opacity);
     width: 100%;
@@ -744,7 +746,7 @@ figure {
     color: var(--index-third-font-color);
 }
 
-.index-main-about__img__3::after{
+.index-about-list__img__3::after{
         content: "Rozwiązania graficzne";
             background-color: var(--index-first-bg-opacity);
             width: 100%;
@@ -762,7 +764,7 @@ figure {
             color: var(--index-third-font-color);
 }
 
-.index-main-about__blank {
+.index-about-list__blank {
     height: 224px;
     width: 100px;
 }
