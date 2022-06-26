@@ -1307,11 +1307,11 @@ figure {
 .portfolio-footer__logo {
     color: var(--portfolio-third-font-color);
     text-decoration: none;
-    font-size: 26px;
-    line-height: 1.192em;
-    letter-spacing: 0.03em;
-    font-family: Raleway;
-    margin: 60px 0 0 0;
+        font-size: 26px;
+        line-height: 1.192em;
+        letter-spacing: 0.03em;
+        font-family: Raleway;
+        margin: 60px 0 0 0;
 }
 
 .portfolio-footer__web {
@@ -1327,7 +1327,6 @@ figure {
     padding: 20px 0 9px 0;
     font-family: Roboto;
 }
-
 .portfolio-footer-contacts {
     display: flex;
     flex-direction: column;
@@ -1355,11 +1354,7 @@ figure {
     padding-bottom: 9px;
 }
 
-.portfolio-footer-contacts__item:last-child {
-    padding-bottom: 60px;
-}
-
-.portfolio-footer2 {
+.portfolio-footer__sectionjoin {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1368,7 +1363,7 @@ figure {
     margin: 72px 0 90px 70px;
 }
 
-.portfolio-footer2>p {
+.portfolio-footer__jointext {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1379,12 +1374,12 @@ figure {
     padding-bottom: 20px;
 }
 
-.portfolio-footer-2-icons {
+.portfolio-footer-sectionicons {
     display: flex;
     justify-content: space-between;
 }
 
-.portfolio-footer-icon {
+.portfolio-footer-sectionicons__icondiv {
     height: 44px;
     width: 44px;
     display: flex;
@@ -1397,33 +1392,33 @@ figure {
     cursor: pointer;
 }
 
-.portfolio-footer-icon:not(:last-child) {
+.portfolio-footer-sectionicons__icondiv:not(:last-child) {
     margin-right: 10px;
 }
 
-.portfolio-footer-icon svg {
+.portfolio-footer-sectionicons__svg {
     width: 20px;
     height: 20px;
 }
 
-.portfolio-footer-icon:hover,
-.portfolio-footer-icon:focus {
+.portfolio-footer-sectionicons__icondiv:hover,
+.portfolio-footer-sectionicons__icondiv:focus {
     background-color: var(--index-icon-hover-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.portfolio-newsletter {
+.portfolio-footer__newsletter {
     margin: 0 auto;
     width: 570px;
     height: 83px;
     margin: 72px 0 90px 70px;
 }
 
-.portfolio-footer-form {
+.portfolio-footer__form {
     display: flex;
 }
 
-.portfolio-newsletter h3 {
+.portfolio-footer__newslettertext {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1435,7 +1430,7 @@ figure {
     margin-bottom: 20px;
 }
 
-.portfolio-newsletter-email {
+.portfolio-footer__newsletteremail {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255, 0.3);
     resize: both;
@@ -1446,7 +1441,7 @@ figure {
     color: var(--portfolio-third-font-color);
 }
 
-.portfolio-newsletter-button {
+.portfolio-footer__newsletterbutton {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1466,17 +1461,17 @@ figure {
     cursor: pointer;
 }
 
-.portfolio-newsletter-email:hover {
+.portfolio-footer__newsletteremail:hover {
     border: 1px solid var(--portfolio-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.portfolio-newsletter-email:focus {
+.portfolio-footer__newsletteremail:focus {
     border: 1px solid var(--portfolio-link-color);
     transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
-.portfolio-newsletter-button svg {
+.portfolio-footer__newslettersvg {
     width: 24px;
     height: 24px;
     fill: var(--portfolio-third-font-color);
