@@ -1,0 +1,59 @@
+.index-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px 0 14.5px 0;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.index-main-header__container {
+    fill: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.index-main-lorem__container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.index-main-about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 94px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.index-main-clients__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-main-team__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.index-footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+    max-height: 252px;
+    margin: 0 auto;
+}
