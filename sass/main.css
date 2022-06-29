@@ -395,13 +395,16 @@
   transition-timing-function: ease-in;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .index-header-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 24px 0 14.5px 0;
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .index-main-header__container {
@@ -411,12 +414,6 @@
   justify-content: center;
   flex-direction: column;
   height: 600px;
-  margin: 0 auto;
-}
-
-.index-main-lorem__container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .index-main-about__container {
@@ -425,8 +422,6 @@
   justify-content: center;
   flex-direction: column;
   padding-bottom: 94px;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .index-main-clients__container {
@@ -441,8 +436,6 @@
   justify-content: center;
   flex-direction: column;
   padding-bottom: 50px;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .index-footer__container {
@@ -450,9 +443,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 1200px;
   max-height: 252px;
-  margin: 0 auto;
 }
 
 .index-upper-logo {
@@ -1076,33 +1067,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 25px 0 14.5px 0;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .portfolio-main__container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-direction: row;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .portfolio-signedphotos__container {
-  margin: 0 auto;
-  width: 1200px;
   padding-bottom: 94px;
 }
 
 .portfolio-footer__container {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   max-height: 252px;
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .portfolio-header-contacts {
